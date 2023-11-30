@@ -19,11 +19,11 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo "Testing.."
+                echo "Testing..Testing"
                 sh '''
                 cd myapp
                 python3 hello.py
-                python3 hello.py --name=DevOps
+                python3 hello.py --name=Development
                 '''
             }
         }
